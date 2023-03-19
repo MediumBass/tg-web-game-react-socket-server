@@ -137,7 +137,7 @@ io.on('connection', (socket) =>{
         if(data.currentHp===9999){
             for(let i=0;i<10;i++){
                 monsterList.push(monsters[Math.floor(Math.random()*monsters.length)])
-                monsterList[i].maxhp=monsterList[i].maxhp*i
+
             }
             monsterList.sort((x, y) => x.lvl - y.lvl);
 
