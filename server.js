@@ -63,7 +63,7 @@ let isBleeding = false
 let bleedCounter = 0
 let bleedDamage = 0
 let deadPlayersCounter = 0
-app.use(cors({origin: 'https://vocal-clafoutis-0f197b.netlify.app/'}));
+app.use(cors({origin: 'https://vocal-clafoutis-0f197b.netlify.app'}));
 app.use(express.json())
 let PORT =process.env.PORT || 8080
 function onDisconnect(id){
