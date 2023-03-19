@@ -65,7 +65,7 @@ let bleedDamage = 0
 let deadPlayersCounter = 0
 app.use(cors({origin: 'http://localhost:3000'}));
 app.use(express.json())
-
+let PORT =process.env.PORT || 8080
 function onDisconnect(id){
     activePlayers.splice(id,1)
 }
@@ -236,8 +236,8 @@ io.on('connection', (socket) =>{
 
 })
 
-server.listen(8080, () => {
-    console.log('listening on 8080');
+server.listen(PORT, () => {
+    console.log('listening on '+PORT);
 });
 app.get('/team', (req,res) => {
     res.json({team})
