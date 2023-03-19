@@ -26,7 +26,7 @@ bot.on('message', (msg) => {
 });
 
 
-
+const cors =require('cors')
 
 const express = require('express');
 
@@ -34,7 +34,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server,{
     cors: {
-        origin: "https://vocal-clafoutis-0f197b.netlify.app/",
+        origin: 'https://vocal-clafoutis-0f197b.netlify.app/',
         methods: ["GET", "POST"]
     }
 });
@@ -45,7 +45,7 @@ const {monsters} = require('./db');
 const {weapons} = require('./db');
 
 
-const cors =require('cors')
+
 
 let team=[]
 let teamHP=[]
