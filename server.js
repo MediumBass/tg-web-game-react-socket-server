@@ -236,8 +236,8 @@ io.on('connection', (socket) =>{
 
 })
 
-server.listen(8000, () => {
-    console.log('listening on 8000');
+server.listen(8080, () => {
+    console.log('listening on 8080');
 });
 app.get('/team', (req,res) => {
     res.json({team})
