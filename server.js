@@ -1,7 +1,7 @@
 
 
 const TelegramBot = require('node-telegram-bot-api');
-const WebAppUrl ="https://vocal-clafoutis-0f197b.netlify.app/"
+const WebAppUrl ="https://vocal-clafoutis-0f197b.netlify.app"
 const token = '6037873883:AAE7uHSgYV7Y3yL1T6IPdYr6O31Eqe8eu1I'
 
 // Create a bot that uses 'polling' to fetch new updates
@@ -34,7 +34,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server,{
     cors: {
-        origin: 'https://vocal-clafoutis-0f197b.netlify.app/',
+        origin: 'https://vocal-clafoutis-0f197b.netlify.app',
         methods: ["GET", "POST"]
     }
 });
