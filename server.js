@@ -33,8 +33,9 @@ const express = require('express');
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server,{
+    //https://vocal-clafoutis-0f197b.netlify.app
     cors: {
-        origin: 'https://vocal-clafoutis-0f197b.netlify.app',
+        origin: 'http://localhost:3000',
         methods: ["GET", "POST"]
     }
 });
@@ -63,7 +64,8 @@ let isBleeding = false
 let bleedCounter = 0
 let bleedDamage = 0
 let deadPlayersCounter = 0
-app.use(cors({origin: 'https://vocal-clafoutis-0f197b.netlify.app'}));
+//https://vocal-clafoutis-0f197b.netlify.app
+app.use(cors({origin: 'http://localhost:3000'}));
 app.use(express.json())
 let PORT =process.env.PORT || 8080
 function onDisconnect(id){
