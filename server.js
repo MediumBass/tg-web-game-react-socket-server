@@ -184,7 +184,7 @@ io.on('connection', (socket) =>{
 
         if(MonsterCurrentHp<=0){
             monsterCounter++
-            if (monsterCounter>=11){
+            if (monsterCounter>=10){
                 io.emit("GAME END", {
                         isVictory: true
                 })
