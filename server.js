@@ -137,7 +137,7 @@ io.on('connection', (socket) =>{
     })
     socket.on("SKILL USED", (data) =>{
         if(data.currentHp===9999){
-            for(let i=0;i<10;i++){
+            for(let i=0;i<12;i++){
                 monsterList.push(monsters[Math.floor(Math.random()*monsters.length)])
 
             }
@@ -184,6 +184,7 @@ io.on('connection', (socket) =>{
 
         if(MonsterCurrentHp<=0){
             monsterCounter++
+            console.log(monsterCounter)
             if (monsterCounter>=10){
                 io.emit("GAME END", {
                         isVictory: true
