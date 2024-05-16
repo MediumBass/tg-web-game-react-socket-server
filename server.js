@@ -2,7 +2,7 @@
 
 const TelegramBot = require('node-telegram-bot-api');
 const WebAppUrl ="https://tg-web-game-react-socket.vercel.app/"
-const baseUrl="https://tg-web-game-react-socket.vercel.app/"
+const baseUrl="https://tg-web-game-react-socket.vercel.app"
 const token = '6037873883:AAE7uHSgYV7Y3yL1T6IPdYr6O31Eqe8eu1I'
 
 // Create a bot that uses 'polling' to fetch new updates
