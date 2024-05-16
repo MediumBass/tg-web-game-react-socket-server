@@ -1,7 +1,7 @@
 
  const monsters = [
-        {"id":0,"name":"Goblin","maxhp":12,"dmg":4,"arm":0,"spd":2,"crt":0.1,"lvl":1,"img":"https://cdn.discordapp.com/attachments/713472920650776657/1081553809995730994/pngfind.com-goblin-png-398297.png"},
-        {"id":1,"name":"Skeleton Archer","maxhp":10,"dmg":7,"arm":0,"spd":1,"crt":0.1,"lvl":1,"img":"https://cdn.discordapp.com/attachments/713472920650776657/1081553780329422928/pngfind.com-skeletons-png-1282325.png"},
+        {"id":0,"name":"Goblin","maxhp":12,"dmg":4,"arm":0,"spd":2,"crt":0.1,"lvl":1,"img":"https://cdn.discordapp.com/attachments/713472920650776657/1240542438288789576/pngfind.com-goblin-png-398297.png?ex=6646f0ad&is=66459f2d&hm=9502832ca3b0d402555f5b8504663197219062b254979a13d0eae8b7ea5acb18&"},
+        {"id":1,"name":"Skeleton Archer","maxhp":10,"dmg":7,"arm":0,"spd":1,"crt":0.1,"lvl":1,"img":"https://cdn.discordapp.com/attachments/713472920650776657/1240527584010309682/pngfind.com-skeletons-png-1282325_1.png?ex=6646e2d7&is=66459157&hm=ab4c8ae25697a773a0cc72f0e3995fadebd32ddcdbad57b9436c5761f9812ba7&"},
         {"id":2,"name":"Ork","maxhp":20,"dmg":5,"arm":2,"spd":0,"crt":0.1,"lvl":2,"img":"https://www.nicepng.com/png/full/264-2645026_nob-warhammer-40000-orks-png.png"},
         {"id":3,"name":"Ogre","maxhp":23,"dmg":5,"arm":0,"spd":0,"crt":0.2,"lvl":2,"img":"https://cdn.discordapp.com/attachments/713472920650776657/1086500899003842581/pngwing.com_18.png"},
         {"id":4,"name":"Ogre Magi","maxhp":24,"dmg":4,"arm":0,"spd":0,"crt":0.2,"lvl":3,"img":"https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.png"},
