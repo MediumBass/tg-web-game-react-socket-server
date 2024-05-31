@@ -1,8 +1,13 @@
 
 
 const TelegramBot = require('node-telegram-bot-api');
+<<<<<<< HEAD
 const WebAppUrl ="https://tg-web-game-react-socket.vercel.app"
 const baseUrl="http://localhost:3000"
+=======
+const WebAppUrl ="https://tg-web-game-react-socket.vercel.app/"
+const baseUrl="https://tg-web-game-react-socket.vercel.app"
+>>>>>>> 8709e5de6196f7fbc18d6c9294bbaac58eebbb41
 const token = '6037873883:AAE7uHSgYV7Y3yL1T6IPdYr6O31Eqe8eu1I'
 
 // Create a bot that uses 'polling' to fetch new updates
@@ -36,7 +41,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server,{
     //https://vocal-clafoutis-0f197b.netlify.app 'http://localhost:3000'
     cors: {
-        origin: baseUrl,
+        origin: "https://tg-web-game-react-socket.vercel.app",
         methods: ["GET", "POST"]
     }
 });
@@ -66,7 +71,7 @@ let bleedCounter = 0
 let bleedDamage = 0
 let deadPlayersCounter = 0
 //https://vocal-clafoutis-0f197b.netlify.app 'http://localhost:3000'
-app.use(cors({origin: baseUrl}));
+app.use(cors({origin: "https://tg-web-game-react-socket.vercel.app"}));
 app.use(express.json())
 let PORT =process.env.PORT || 8080
 function onDisconnect(id){
